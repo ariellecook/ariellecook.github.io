@@ -69,11 +69,13 @@ $red:			#d57f75;
 $copy-grey:		#5e5e5e;
 
 // Fonts //
-$font-pt:		"pt-sans", sans-serif;
-$font-open:		"open-sans", sans-serif;
+$font-pt:		'PT Sans', sans-serif;
+$font-open:		'Open Sans', sans-serif;
+$font-lobster:	'Lobster', cursive;
 
 $light:			300;
 $regular:		400;
+$semi-bold:		600;
 $bold:			700;
 
 // ------- Mixins ------- //
@@ -176,6 +178,12 @@ h1 {
 		margin-bottom: 24px;
 
 		border-bottom: 2px solid $mustard;
+
+		&.red-heading {
+			color: $red;
+
+			border-bottom: 2px solid $red;
+		}
 	}
 }
 
@@ -246,6 +254,34 @@ h4 {
 
 	border-bottom: 2px solid white;
 }
+
+p {
+	margin-top: 0;
+	margin-bottom: 4%;
+
+	font-size: 1.6rem;
+	font-family: $font-open;
+	font-weight: $light;
+	font-style: normal;
+	text-align: left;
+	color: $copy-grey;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+li {
+	margin-top: 0;
+
+	font-size: 1.6rem;
+	font-family: $font-open;
+	font-weight: $light;
+	font-style: normal;
+	text-align: left;
+	color: $copy-grey;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
 
 // Header //
 

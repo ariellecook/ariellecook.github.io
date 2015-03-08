@@ -1,0 +1,300 @@
+#case-study {
+
+	section {
+
+		&.last-section {
+			border-bottom: 2px solid $grey;
+		}
+
+		.sub-section-heading {
+			width: 100%;
+			height: 70px;
+
+			background-color: $copy-grey;
+
+			font-size: 2.5rem;
+			font-family: $font-open;
+			font-weight: $regular;
+			font-style: normal;
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 70px;
+			letter-spacing: 2px;
+			color: #fff;
+		}
+
+		.sub-section {
+			padding: 25px 0 25px 0;
+			margin: 0;
+
+			.container {
+				
+			}
+		}
+
+		.bg-blue {
+			background-color: $blue;
+		}
+		.bg-light-blue {
+			background-color: $light-blue;
+		}
+		.bg-red {
+			background-color: $red;
+		}
+		.bg-grey {
+			background-color: $light-grey;
+		}
+		.bg-dark-grey {
+			background-color: $copy-grey;
+		}
+		.bg-mustard {
+			background-color: $mustard;
+		}
+		.bg-white {
+			background-color: #fff;
+		}
+	}
+
+
+	#intro {
+		padding-top: 50px;
+
+		@include respond-to('small') {
+			padding-top: 70px;
+		}
+
+		.container {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		.intro-left, .intro-right, .summary-left, .summary-right {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+
+		.intro-right {
+			position: relative;
+
+			&:after {
+				content: "";
+
+				position: absolute;
+				top: 0;
+				left: -1px;
+
+				width: 2px;
+				height: 100%;
+
+				background-color: white;
+			}
+		}
+	}
+	#research {
+
+		.persona-container {
+			padding-left: 20px;
+			padding-right: 20px;
+
+			.persona-card {
+				width: 100%;
+				min-height: 350px;
+
+				padding: 10px;
+
+				background-color: white;
+
+				.persona-thumbnail {
+					width: 48%;
+					float: left;
+				}
+
+				.name-container {
+					width: 48%;
+					float: right;
+
+					.name {
+						width: 100%;
+						height: 40px;
+
+						background-color: $blue;
+
+						font-size: 1.7rem;
+						font-family: $font-open;
+						font-weight: $bold;
+						font-style: normal;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+						text-align: center;
+						line-height: 44px;
+						color: white;
+					}
+					.quote {
+						margin-top: 10px;
+
+						font-size: 1.6rem;
+						font-family: $font-pt;
+						font-weight: $bold;
+						font-style: italic;
+						letter-spacing: 1px;
+						line-height: 1.2;
+						color: $grey;
+
+					}
+				}
+				.details {
+					clear: both;
+					padding-top: 10px;
+
+					.heading {
+						font-size: 1.3rem;
+						font-family: $font-open;
+						font-weight: $regular;
+						font-style: normal;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+						color: $mustard;
+					}
+					ul {
+						color: $copy-grey;
+						padding-left: 20px;
+
+						li {
+							color: $copy-grey;
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	#iterative-design {
+
+		.container {
+			padding: 0;
+		}
+
+		.id-heading {
+			position: relative;
+
+			width: 100%;
+			height: 70px;
+
+			background-color: white;
+			text-align: center;
+
+			h2 {
+				display: inline-block;
+				float: none;
+
+				position: absolute;
+				@include xy-center;
+
+				padding: 0 30px 5px 30px;
+				border-bottom: 2px solid $mustard;
+
+				text-align: center;
+				color: $mustard;
+			}
+		}
+
+		.intro {
+			padding: 60px 15px 100px;
+		}
+
+		.sitemap {
+			padding: 30px 60px;
+		}
+
+		.userflow {
+			padding: 30px 10px;
+
+			text-align: center;
+
+			.userflow-details {
+				position: relative;
+				display: inline-block;
+
+				width: 90%;
+				padding-top: 5px;
+				padding-left: 65px;
+				margin-bottom: 20px;
+
+				font-size: 1.5rem;
+				font-family: $font-pt;
+				font-weight: $bold;
+				font-style: italic;
+				letter-spacing: 1px;
+				line-height: 1;
+				text-align: left;
+				color: $mustard;
+
+				.user-thumbnail {
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+
+	}
+	#prototype-development {
+		.prototype-left {
+			padding: 100px 0 150px;
+		}
+		.prototype-right {
+
+		}
+
+		.prototype-thumbnail-container {
+			padding: 30px 50px;
+
+			.prototype-thumbnail {
+				height: 300px;
+
+				font-family: $font-open;
+				font-weight: $regular;
+				font-style: normal;
+				text-align: center;
+				text-transform: uppercase;
+				color: $grey;
+
+				img {
+					max-height: 270px;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		.outcome {
+			padding: 60px 15px 100px;
+
+			.outcome-item {
+				display: block;
+
+				font-size: 1.5rem;
+				font-family: $font-pt;
+				font-weight: $bold;
+				font-style: normal;
+				text-align: left;
+				letter-spacing: 2px;
+				color: black;
+
+				margin-bottom: 10px;
+
+				strong {
+					text-transform: uppercase;
+					color: white;
+				}
+			}
+
+			.outcome-copy {
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
