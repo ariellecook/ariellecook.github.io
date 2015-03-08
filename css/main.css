@@ -5717,11 +5717,11 @@ h1 {
       border-bottom: 2px solid white; }
 
 h2 {
-  float: left;
+  float: none;
   display: block;
-  margin-top: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
   padding-top: 3px;
-  padding-bottom: 20px;
   font-size: 2.1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -5730,6 +5730,12 @@ h2 {
   letter-spacing: 2px;
   text-align: left;
   color: #5e5e5e; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      float: left;
+      padding-bottom: 20px;
+      margin-top: 0;
+      margin-bottom: 10px; } }
 
 h3 {
   display: inline-block;
@@ -5775,6 +5781,7 @@ h4 {
 h5 {
   position: relative;
   display: block;
+  margin-bottom: 0;
   font-size: 2.1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -5852,6 +5859,7 @@ header {
     height: 100%;
     text-align: right; }
     header .nav-container nav {
+      display: none;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -6406,8 +6414,10 @@ footer {
   letter-spacing: 2px;
   color: #fff; }
 #case-study section .sub-section {
-  padding: 25px 0 25px 0;
   margin: 0; }
+  @media only screen and (min-width: 768px) {
+    #case-study section .sub-section {
+      padding: 25px 0 25px 0; } }
 #case-study section .bg-blue {
   background-color: #afd8d8; }
 #case-study section .bg-light-blue {
@@ -6428,9 +6438,17 @@ footer {
     #case-study #intro {
       padding-top: 70px; } }
   #case-study #intro .splash {
-    min-height: 470px;
     position: relative;
     text-align: center; }
+    @media only screen and (min-width: 768px) {
+      #case-study #intro .splash {
+        min-height: 470px; } }
+    #case-study #intro .splash.magic {
+      height: 320px; }
+    #case-study #intro .splash.pozible {
+      height: 300px; }
+    #case-study #intro .splash.lifeally {
+      height: 240px; }
     #case-study #intro .splash .splash-image {
       width: 90%;
       position: absolute;
@@ -6438,9 +6456,17 @@ footer {
       left: 50%;
       transform: translate(-50%, -50%); }
   #case-study #intro .title {
-    min-height: 470px;
     position: relative;
     text-align: center; }
+    @media only screen and (min-width: 768px) {
+      #case-study #intro .title {
+        min-height: 470px; } }
+    #case-study #intro .title.magic {
+      height: 70px; }
+    #case-study #intro .title.pozible {
+      height: 70px; }
+    #case-study #intro .title.lifeally {
+      height: 80px; }
     #case-study #intro .title .title-img {
       width: 90%;
       position: absolute;
@@ -6448,41 +6474,71 @@ footer {
       left: 50%;
       transform: translate(-50%, -50%); }
   #case-study #intro .container {
-    padding-top: 30px;
-    padding-bottom: 30px; }
-  #case-study #intro .intro-left, #case-study #intro .intro-right, #case-study #intro .summary-left, #case-study #intro .summary-right {
-    padding-left: 60px;
-    padding-right: 60px; }
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    @media only screen and (min-width: 768px) {
+      #case-study #intro .container {
+        padding-top: 30px;
+        padding-bottom: 30px; } }
+  @media only screen and (min-width: 768px) {
+    #case-study #intro .intro-left, #case-study #intro .intro-right, #case-study #intro .summary-left, #case-study #intro .summary-right {
+      padding-left: 60px;
+      padding-right: 60px; } }
   #case-study #intro .intro-left p, #case-study #intro .intro-left li, #case-study #intro .intro-right p, #case-study #intro .intro-right li {
     color: #3d3e3e; }
   #case-study #intro .divider-left {
     position: relative; }
-    #case-study #intro .divider-left:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -1px;
-      width: 2px;
-      height: 100%;
-      background-color: white; }
+    @media only screen and (min-width: 768px) {
+      #case-study #intro .divider-left:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -1px;
+        width: 2px;
+        height: 100%;
+        background-color: white; } }
   #case-study #intro .divider-right {
     position: relative; }
-    #case-study #intro .divider-right:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -1px;
-      width: 2px;
-      height: 100%;
-      background-color: white; }
+    @media only screen and (min-width: 768px) {
+      #case-study #intro .divider-right:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: 2px;
+        height: 100%;
+        background-color: white; } }
   #case-study #intro .approach {
     font-size: 2.1rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     text-align: center;
     letter-spacing: 2px;
     color: white; }
+    #case-study #intro .approach .approach-link {
+      position: relative;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 1.9rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #c5ab55; }
+      #case-study #intro .approach .approach-link.arrow {
+        margin-right: 100px; }
+        #case-study #intro .approach .approach-link.arrow:after {
+          content: ">";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -65px;
+          font-weight: 700;
+          font-size: 2.4rem;
+          color: #afd8d8; }
 #case-study #research .persona-container {
   padding-left: 20px;
   padding-right: 20px; }
@@ -6547,77 +6603,84 @@ footer {
   text-transform: uppercase;
   text-align: left;
   color: #d57f75; }
-#case-study #iterative-design .container {
-  position: relative;
-  padding: 0; }
-#case-study #iterative-design .pozible-id-half {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0; }
-#case-study #iterative-design .id-heading {
-  position: relative;
-  width: 100%;
-  height: 70px;
-  background-color: white;
-  text-align: center; }
-  #case-study #iterative-design .id-heading h2 {
-    display: inline-block;
-    float: none;
-    position: absolute;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 30px 5px 30px;
-    border-bottom: 2px solid #c5ab55;
-    text-align: center;
-    color: #c5ab55; }
-#case-study #iterative-design .intro {
-  padding: 60px 15px 100px; }
-#case-study #iterative-design .sitemap {
-  padding: 30px 60px; }
-#case-study #iterative-design .userflow {
-  padding: 30px 10px;
-  text-align: center; }
-  #case-study #iterative-design .userflow .userflow-details {
+#case-study #iterative-design {
+  overflow: hidden; }
+  #case-study #iterative-design .container {
     position: relative;
-    display: inline-block;
-    width: 90%;
-    padding-top: 5px;
-    padding-left: 65px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-family: "PT Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: 1px;
-    line-height: 1;
-    text-align: left;
-    color: #c5ab55; }
-    #case-study #iterative-design .userflow .userflow-details .user-thumbnail {
+    padding: 0; }
+  #case-study #iterative-design .pozible-id-half {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0; }
+  #case-study #iterative-design .id-heading {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    text-align: center; }
+    #case-study #iterative-design .id-heading h2 {
+      display: inline-block;
+      float: none;
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 60px;
-      height: 60px; }
-#case-study #iterative-design .id-thumbnail {
-  text-align: center;
-  color: #d57f75;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  margin-bottom: 10px; }
-  #case-study #iterative-design .id-thumbnail img {
-    width: 90%; }
-#case-study #iterative-design .id-analysis {
-  height: 360px;
-  margin-bottom: 10px; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      padding: 0 30px 5px 30px;
+      border-bottom: 2px solid #c5ab55;
+      text-align: center;
+      color: #c5ab55; }
+  #case-study #iterative-design .intro {
+    padding: 60px 15px 100px; }
+  #case-study #iterative-design .sitemap {
+    padding: 30px 60px; }
+  #case-study #iterative-design .userflow {
+    padding: 30px 10px;
+    text-align: center; }
+    #case-study #iterative-design .userflow .userflow-details {
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      padding-top: 5px;
+      padding-left: 65px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      letter-spacing: 1px;
+      line-height: 1;
+      text-align: left;
+      color: #c5ab55; }
+      #case-study #iterative-design .userflow .userflow-details .user-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px; }
+  #case-study #iterative-design .id-thumbnail {
+    text-align: center;
+    color: #d57f75;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 10px; }
+    #case-study #iterative-design .id-thumbnail img {
+      width: 90%; }
+  #case-study #iterative-design .id-analysis {
+    height: 360px;
+    margin-bottom: 10px; }
 #case-study #prototype-development .prototype-left {
   padding: 100px 0 150px; }
+#case-study #prototype-development .prototype-right {
+  text-align: center; }
+#case-study #prototype-development .lifeally-prototype {
+  text-align: center; }
 #case-study #prototype-development .prototype-thumbnail-container {
   padding: 30px 50px; }
   #case-study #prototype-development .prototype-thumbnail-container .prototype-thumbnail {
@@ -6631,10 +6694,40 @@ footer {
     #case-study #prototype-development .prototype-thumbnail-container .prototype-thumbnail img {
       max-height: 270px;
       margin-top: 10px; }
+#case-study #prototype-development .prototype-link {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  background-color: #9d9d9d; }
+  #case-study #prototype-development .prototype-link.magic {
+    width: 75%; }
+  #case-study #prototype-development .prototype-link.pozible, #case-study #prototype-development .prototype-link.lifeally {
+    width: 60%; }
+  #case-study #prototype-development .prototype-link .prototype-link-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 1.7rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white; }
+  #case-study #prototype-development .prototype-link.magic:hover {
+    background-color: #afd8d8; }
+  #case-study #prototype-development .prototype-link.pozible:hover {
+    background-color: #c5ab55; }
+  #case-study #prototype-development .prototype-link.lifeally:hover {
+    background-color: #d57f75; }
 #case-study #prototype-development .lifeally-prototype-thumbnail {
   display: inherit;
   margin: 0 auto;
-  width: 70%; }
+  width: 70%;
+  margin-bottom: 20px; }
 #case-study #prototype-development .outcome {
   padding: 60px 15px 100px; }
   #case-study #prototype-development .outcome .outcome-item {

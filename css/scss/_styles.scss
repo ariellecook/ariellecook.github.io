@@ -193,12 +193,12 @@ h1 {
 }
 
 h2 {
-	float: left;
+	float: none;
 	display: block;
 
-	margin-top: 0;
+	margin-top: 20px;
+	margin-bottom: 0;
 	padding-top: 3px;
-	padding-bottom: 20px;
 
 	font-size: 2.1rem;
 	font-family: $font-open;
@@ -208,6 +208,14 @@ h2 {
 	letter-spacing: 2px;
 	text-align: left;
 	color: $copy-grey;
+
+	@include respond-to('small') {
+		float: left;
+
+		padding-bottom: 20px;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
 }
 
 h3 {
@@ -264,6 +272,8 @@ h4 {
 h5 {
 	position: relative;
 	display: block;
+
+	margin-bottom: 0;
 
 	font-size: 2.1rem;
 	font-family: $font-open;
@@ -371,6 +381,8 @@ header {
 		text-align: right;
 
 		nav {
+			display: none;
+
 			@include y-center;
 			right: 40px;
 
