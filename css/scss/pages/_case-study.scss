@@ -73,7 +73,29 @@
 			padding-right: 60px;
 		}
 
-		.intro-right {
+		.intro-left, .intro-right {
+			p, li {
+				color: $darker-grey;
+			}
+		}
+
+		.divider-left {
+			position: relative;
+
+			&:after {
+				content: "";
+
+				position: absolute;
+				top: 0;
+				right: -1px;
+
+				width: 2px;
+				height: 100%;
+
+				background-color: white;
+			}
+		}
+		.divider-right {
 			position: relative;
 
 			&:after {
@@ -88,6 +110,15 @@
 
 				background-color: white;
 			}
+		}
+
+		.approach {
+			font-size: 2.1rem;
+			font-family: $font-open;
+			font-weight: $regular;
+			font-style: normal;
+			text-align: center;
+			letter-spacing: 2px;
 		}
 	}
 	#research {
@@ -113,7 +144,7 @@
 					width: 48%;
 					float: right;
 
-					.name {
+					.persona-name {
 						width: 100%;
 						height: 40px;
 
@@ -129,7 +160,7 @@
 						line-height: 44px;
 						color: white;
 					}
-					.quote {
+					.persona-quote {
 						margin-top: 10px;
 
 						font-size: 1.6rem;
@@ -166,6 +197,21 @@
 					}
 				}
 			}
+		}
+
+		.quote {
+			display: block;
+
+			margin-bottom: 20px;
+
+			font-size: 1.5rem;
+			font-family: $font-pt;
+			font-weight: $bold;
+			font-style: italic;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			text-align: left;
+			color: $red;
 		}
 	}
 	#iterative-design {
