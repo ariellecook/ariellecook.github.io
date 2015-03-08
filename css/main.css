@@ -5782,6 +5782,7 @@ h5 {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
+  color: white;
   background-color: #5e5e5e; }
   h5:before, h5:after {
     content: "";
@@ -6027,7 +6028,10 @@ footer {
     #landing #home {
       padding-top: 70px; } }
   #landing #home .home-container {
-    position: relative;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
     height: 100%;
     padding: 0;
     text-align: center; }
@@ -6069,7 +6073,7 @@ footer {
           font-style: normal;
           text-align: right;
           text-transform: uppercase;
-          line-height: 3.6vh;
+          line-height: 1.7;
           letter-spacing: 2px;
           color: #5e5e5e;
           -webkit-font-smoothing: subpixel-antialiased;
@@ -6099,6 +6103,8 @@ footer {
         transition-delay: 1s; }
         #landing #home .home-container .splash-container .splash-logo.animate {
           transform: scale(1); }
+        #landing #home .home-container .splash-container .splash-logo img {
+          width: 70px; }
         #landing #home .home-container .splash-container .splash-logo .letter-container {
           position: absolute;
           top: 50%;
@@ -6421,6 +6427,26 @@ footer {
   @media only screen and (min-width: 768px) {
     #case-study #intro {
       padding-top: 70px; } }
+  #case-study #intro .splash {
+    min-height: 470px;
+    position: relative;
+    text-align: center; }
+    #case-study #intro .splash .splash-image {
+      width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #case-study #intro .title {
+    min-height: 470px;
+    position: relative;
+    text-align: center; }
+    #case-study #intro .title .title-img {
+      width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   #case-study #intro .container {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -6455,7 +6481,8 @@ footer {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    color: white; }
 #case-study #research .persona-container {
   padding-left: 20px;
   padding-right: 20px; }
@@ -6521,7 +6548,14 @@ footer {
   text-align: left;
   color: #d57f75; }
 #case-study #iterative-design .container {
+  position: relative;
   padding: 0; }
+#case-study #iterative-design .pozible-id-half {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; }
 #case-study #iterative-design .id-heading {
   position: relative;
   width: 100%;
@@ -6568,6 +6602,20 @@ footer {
       left: 0;
       width: 60px;
       height: 60px; }
+#case-study #iterative-design .id-thumbnail {
+  text-align: center;
+  color: #d57f75;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 10px; }
+  #case-study #iterative-design .id-thumbnail img {
+    width: 90%; }
+#case-study #iterative-design .id-analysis {
+  height: 360px;
+  margin-bottom: 10px; }
 #case-study #prototype-development .prototype-left {
   padding: 100px 0 150px; }
 #case-study #prototype-development .prototype-thumbnail-container {
@@ -6583,6 +6631,10 @@ footer {
     #case-study #prototype-development .prototype-thumbnail-container .prototype-thumbnail img {
       max-height: 270px;
       margin-top: 10px; }
+#case-study #prototype-development .lifeally-prototype-thumbnail {
+  display: inherit;
+  margin: 0 auto;
+  width: 70%; }
 #case-study #prototype-development .outcome {
   padding: 60px 15px 100px; }
   #case-study #prototype-development .outcome .outcome-item {

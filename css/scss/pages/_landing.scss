@@ -29,7 +29,11 @@
 			padding-top: 70px;
 		}
 		.home-container {
-			position: relative;
+			position: relative !important;
+			top: auto !important;
+			left: auto !important;
+			transform: none !important;
+
 
 			height: 100%;
 			padding: 0;
@@ -82,7 +86,7 @@
 						font-style: normal;
 						text-align: right;
 						text-transform: uppercase;
-						line-height: 3.6vh;
+						line-height: 1.7;
 						letter-spacing: 2px;
 						color: $copy-grey;
 
@@ -128,6 +132,10 @@
 
 					&.animate {
 						transform: scale(1);
+					}
+
+					img {
+						width: 70px;
 					}
 
 					.letter-container {
