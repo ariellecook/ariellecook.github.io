@@ -5750,6 +5750,8 @@ h5 {
     width: 30%;
     height: 2px;
     background-color: #c5ab55; }
+  h5.red:before, h5.red:after {
+    background-color: #d57f75; }
   h5:before {
     left: 0; }
   h5:after {
@@ -6597,6 +6599,10 @@ footer {
           font-weight: 700;
           font-size: 2.4rem;
           color: #afd8d8; }
+      #case-study #intro .approach .approach-link.red {
+        color: #d57f75; }
+      #case-study #intro .approach .approach-link:hover {
+        color: #9d9d9d; }
 #case-study #research .persona-container {
   padding-left: 20px;
   padding-right: 20px; }
@@ -6661,6 +6667,10 @@ footer {
   text-transform: uppercase;
   text-align: left;
   color: #d57f75; }
+#case-study #research .pie-chart {
+  width: 90%; }
+#case-study #research .hypothesis {
+  width: 90%; }
 #case-study #iterative-design {
   overflow: hidden; }
   #case-study #iterative-design .container {
@@ -6754,6 +6764,8 @@ footer {
     #case-study #prototype-development .prototype-thumbnail-container .prototype-thumbnail img {
       max-height: 270px;
       margin-top: 10px; }
+#case-study #prototype-development .prototype-link-thumbnail {
+  width: 80%; }
 #case-study #prototype-development .prototype-link {
   display: inline-block;
   position: relative;

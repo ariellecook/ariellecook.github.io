@@ -295,6 +295,9 @@ h5 {
 
 		background-color: $mustard;
 	}
+	&.red:before, &.red:after {
+		background-color: $red;
+	}
 
 	&:before {
 		left: 0;

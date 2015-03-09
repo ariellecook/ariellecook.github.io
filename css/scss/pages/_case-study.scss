@@ -213,6 +213,12 @@
 						color: $blue;
 					}
 				}
+				&.red {
+					color: $red;
+				}
+				&:hover {
+					color: $grey;
+				}
 			}
 		}
 	}
@@ -307,6 +313,13 @@
 			text-transform: uppercase;
 			text-align: left;
 			color: $red;
+		}
+
+		.pie-chart {
+			width: 90%;
+		}
+		.hypothesis {
+			width: 90%;
 		}
 	}
 	#iterative-design {
@@ -446,6 +459,10 @@
 					margin-top: 10px;
 				}
 			}
+		}
+
+		.prototype-link-thumbnail {
+			width: 80%;
 		}
 
 		.prototype-link {
