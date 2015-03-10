@@ -5880,14 +5880,19 @@ header {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       right: 40px; }
+      @media only screen and (min-width: 768px) {
+        header .nav-container nav {
+          display: block; } }
       header .nav-container nav a {
         margin-left: 20px;
         color: white;
         font-size: 1.5rem;
         text-transform: uppercase;
-        font-weight: 400; }
+        font-weight: 400;
+        opacity: 1; }
         header .nav-container nav a:hover, header .nav-container nav a:active {
-          text-decoration: none; }
+          text-decoration: none;
+          opacity: 0.8; }
 
 section {
   position: relative;
@@ -6051,7 +6056,7 @@ footer {
   clear: both; }
 
 #landing section {
-  min-height: 90vh;
+  padding-top: 100px;
   border-bottom: 2px solid #9d9d9d; }
   #landing section .container {
     position: absolute;
@@ -6060,8 +6065,7 @@ footer {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    top: 49%;
-    height: inherit; }
+    top: 49%; }
     #landing section .container .row {
       height: inherit; }
 #landing #home {
@@ -6081,190 +6085,16 @@ footer {
     height: 100%;
     padding: 0;
     text-align: center; }
-    #landing #home .home-container .splash-container {
+    #landing #home .home-container .landing-splash-img {
+      width: 575px;
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%) scale(1);
-          -ms-transform: translate(-50%, -50%) scale(1);
-              transform: translate(-50%, -50%) scale(1);
-      width: 80%;
-      padding-bottom: 80%;
-      -webkit-transition: left 0.2s linear;
-              transition: left 0.2s linear;
-      -webkit-transition-delay: 1.5s;
-              transition-delay: 1.5s; }
-      @media only screen and (min-width: 768px) {
-        #landing #home .home-container .splash-container {
-          width: 30%;
-          padding-bottom: 30%; } }
-      #landing #home .home-container .splash-container.animate {
-        left: 55%; }
-      #landing #home .home-container .splash-container .splash-copy-container {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-        left: -100%;
-        z-index: 4;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        -webkit-transition: left 0.2s linear;
-                transition: left 0.2s linear;
-        -webkit-transition-delay: 1.5s;
-                transition-delay: 1.5s; }
-        #landing #home .home-container .splash-container .splash-copy-container.animate {
-          left: -90%; }
-        #landing #home .home-container .splash-container .splash-copy-container .splash-copy {
-          margin-top: 40%;
-          margin-right: 3%;
-          font-size: 1.7rem;
-          font-family: "Open Sans", sans-serif;
-          font-weight: 300;
-          font-style: normal;
-          text-align: right;
-          text-transform: uppercase;
-          line-height: 1.7;
-          letter-spacing: 2px;
-          color: #5e5e5e;
-          -webkit-font-smoothing: subpixel-antialiased;
-          opacity: 0;
-          -webkit-transition: opacity 0.4s linear;
-                  transition: opacity 0.4s linear;
-          -webkit-transition-delay: 3s;
-                  transition-delay: 3s; }
-          #landing #home .home-container .splash-container .splash-copy-container .splash-copy.animate {
-            opacity: 1; }
-          #landing #home .home-container .splash-container .splash-copy-container .splash-copy strong {
-            font-family: "PT Sans", sans-serif;
-            font-weight: 700;
-            font-style: italic;
-            text-transform: none;
-            color: #c5ab55; }
-      #landing #home .home-container .splash-container .splash-logo {
-        position: absolute;
-        top: 2%;
-        left: -10%;
-        z-index: 4;
-        width: 33.33333333%;
-        padding-bottom: 33.33333333%;
-        text-align: center;
-        border-radius: 50%;
-        background-color: #9d9d9d;
-        -webkit-transform: scale(0);
-            -ms-transform: scale(0);
-                transform: scale(0);
-        -webkit-transition: -webkit-transform 0.3s linear;
-                transition: transform 0.3s linear;
-        -webkit-transition-delay: 1s;
-                transition-delay: 1s; }
-        #landing #home .home-container .splash-container .splash-logo.animate {
-          -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-                  transform: scale(1); }
-        #landing #home .home-container .splash-container .splash-logo img {
-          width: 70px; }
-        #landing #home .home-container .splash-container .splash-logo .letter-container {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
-          width: 100%; }
-          #landing #home .home-container .splash-container .splash-logo .letter-container p {
-            position: relative;
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-            margin-right: 19px;
-            font-family: "Open Sans", sans-serif;
-            font-weight: 400;
-            font-size: 2.5vh;
-            color: white;
-            opacity: 0;
-            -webkit-font-smoothing: subpixel-antialiased; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p:last-of-type {
-              margin-right: 0; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p:last-of-type:after {
-              display: none; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p:after {
-              content: "";
-              display: inline-block;
-              position: absolute;
-              bottom: 5px;
-              right: -14px;
-              width: 4px;
-              height: 4px;
-              border-radius: 50%;
-              background-color: #c5ab55; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p.one, #landing #home .home-container .splash-container .splash-logo .letter-container p.two, #landing #home .home-container .splash-container .splash-logo .letter-container p.three {
-              -webkit-transition: opacity 0.3s linear;
-                      transition: opacity 0.3s linear; }
-              #landing #home .home-container .splash-container .splash-logo .letter-container p.one.animate, #landing #home .home-container .splash-container .splash-logo .letter-container p.two.animate, #landing #home .home-container .splash-container .splash-logo .letter-container p.three.animate {
-                opacity: 1; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p.one {
-              -webkit-transition-delay: 2s;
-                      transition-delay: 2s; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p.two {
-              -webkit-transition-delay: 2.3s;
-                      transition-delay: 2.3s; }
-            #landing #home .home-container .splash-container .splash-logo .letter-container p.three {
-              -webkit-transition-delay: 2.6s;
-                      transition-delay: 2.6s; }
-      #landing #home .home-container .splash-container .splash-img {
-        overflow: hidden;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%) scale(0);
-            -ms-transform: translate(-50%, -50%) scale(0);
-                transform: translate(-50%, -50%) scale(0);
-        width: 100%;
-        padding-bottom: 100%;
-        border-radius: 50%;
-        background-image: url("../img/splash.png");
-        background-size: 100% 100%;
-        -webkit-transition: -webkit-transform 0.3s linear;
-                transition: transform 0.3s linear;
-        -webkit-transition-delay: 1s;
-                transition-delay: 1s; }
-        #landing #home .home-container .splash-container .splash-img.animate {
-          -webkit-transform: translate(-50%, -50%) scale(1);
-              -ms-transform: translate(-50%, -50%) scale(1);
-                  transform: translate(-50%, -50%) scale(1); }
-        #landing #home .home-container .splash-container .splash-img .splash-img-shade {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 105%;
-          height: 105%;
-          background-color: #5e5e5e;
-          opacity: 0.7;
-          -webkit-transform-origin: center center;
-              -ms-transform-origin: center center;
-                  transform-origin: center center;
-          -webkit-transform: rotate(45deg) translateX(-105%);
-              -ms-transform: rotate(45deg) translateX(-105%);
-                  transform: rotate(45deg) translateX(-105%);
-          -webkit-transition: -webkit-transform 0.2s linear;
-                  transition: transform 0.2s linear;
-          -webkit-transition-delay: 1.5s;
-                  transition-delay: 1.5s;
-          -webkit-backface-visibility: hidden; }
-          #landing #home .home-container .splash-container .splash-img .splash-img-shade.animate {
-            -webkit-transform: rotate(45deg) translateX(-55%);
-                -ms-transform: rotate(45deg) translateX(-55%);
-                    transform: rotate(45deg) translateX(-55%); }
+              transform: translate(-50%, -50%); }
 #landing #ux {
+  height: 800px;
   background-color: #eaeded; }
   #landing #ux .ux-cases {
     padding-left: 3%;
@@ -6332,6 +6162,7 @@ footer {
       #landing #ux .ux-cases .ux-img.lifeally {
         background-image: url("../img/ux-lifeally.png"); }
 #landing #about {
+  height: 750px;
   background-color: #d8ecec; }
   #landing #about .about-section {
     height: 80vh;
@@ -6391,7 +6222,7 @@ footer {
         width: 20%;
         margin: 0 0.56%; }
 #landing #contact {
-  min-height: 75vh;
+  height: 600px;
   background-color: #eaeded; }
   #landing #contact .photo-section {
     position: relative;

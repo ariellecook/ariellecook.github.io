@@ -1,15 +1,12 @@
 #landing {
 
 	section {
-		min-height: 90vh;
-
+		padding-top: 100px;
 		border-bottom: 2px solid $grey;
 
 		.container {
 			@include xy-center;
 			top: 49%;
-
-			height: inherit;
 
 			.row {
 				height: inherit;
@@ -40,223 +37,230 @@
 
 			text-align: center;
 
-			.splash-container {
+			.landing-splash-img {
+				width: 575px;
+
 				@include xy-center;
-				transform: translate(-50%,-50%) scale(1);
-
-				width: 80%;
-				padding-bottom: 80%;
-
-				transition: left 0.2s linear;
-				transition-delay: 1.5s;
-
-				@include respond-to('small') {
-					width: 30%;
-					padding-bottom: 30%;
-				}
-
-				&.animate {
-					left: 55%;
-				}
-
-				.splash-copy-container {
-					@include y-center;
-					left: -100%;
-					z-index: 4;
-
-					width: 100%;
-					height: 100%;
-
-					background-color: white;
-
-					transition: left 0.2s linear;
-					transition-delay: 1.5s;
-
-					&.animate {
-						left: -90%;
-					}
-
-					.splash-copy {
-						margin-top: 40%;
-						margin-right: 3%;
-
-						font-size: 1.7rem;
-						font-family: $font-open;
-						font-weight: $light;
-						font-style: normal;
-						text-align: right;
-						text-transform: uppercase;
-						line-height: 1.7;
-						letter-spacing: 2px;
-						color: $copy-grey;
-
-						-webkit-font-smoothing: subpixel-antialiased;
-
-						opacity: 0;
-
-						transition: opacity 0.4s linear;
-						transition-delay: 3s;
-
-						&.animate {
-							opacity: 1;
-						}
-
-						strong {
-							font-family: $font-pt;
-							font-weight: $bold;
-							font-style: italic;
-							text-transform: none;
-							color: $mustard;
-						}
-					}
-				}
-
-				.splash-logo {
-					position: absolute;
-					top: 2%;
-					left: -10%;
-					z-index: 4;
-
-					width: 33.33333333%;
-					padding-bottom: 33.33333333%;
-					text-align: center;
-
-					border-radius: 50%;
-
-					background-color: $grey;
-
-					transform: scale(0);
-
-					transition: transform 0.3s linear;
-					transition-delay: 1s;
-
-					&.animate {
-						transform: scale(1);
-					}
-
-					img {
-						width: 70px;
-					}
-
-					.letter-container {
-						@include xy-center;
-
-						width: 100%;
-
-						p {
-							position: relative;
-
-							display: inline-block;
-
-							margin: 0;
-							padding: 0;
-							margin-right: 19px;
-
-							font-family: $font-open;
-							font-weight: $regular;
-							font-size: 2.5vh;
-							color: white;
-
-							opacity: 0;
-
-							-webkit-font-smoothing: subpixel-antialiased;
-
-							&:last-of-type {
-								margin-right: 0;
-							}
-							&:last-of-type:after {
-								display: none;
-							}
-
-							&:after {
-								content: "";
-
-								display: inline-block;
-
-								position: absolute;
-								bottom: 5px;
-								right: -14px;
-
-								width: 4px;
-								height: 4px;
-
-								border-radius: 50%;
-
-								background-color: $mustard;
-							}
-
-							&.one, &.two, &.three {
-								transition: opacity 0.3s linear;
-
-								&.animate {
-									opacity: 1;
-								}
-							}
-							&.one {
-								transition-delay: 2s;
-							}
-							&.two {
-								transition-delay: 2.3s;
-							}
-							&.three {
-								transition-delay: 2.6s;
-							}
-						}
-					}
-				}
-				.splash-img {
-					overflow: hidden;
-
-					@include xy-center;
-					transform: translate(-50%,-50%) scale(0);
-
-					width: 100%;
-					padding-bottom: 100%;
-
-					border-radius: 50%;
-
-					background-image: url('../img/splash.png');
-					background-size: 100% 100%;
-
-					transition: transform 0.3s linear;
-					transition-delay: 1s;
-
-					&.animate {
-						transform: translate(-50%,-50%) scale(1);
-					}
-
-					.splash-img-shade {
-						position: absolute;
-						top: 0;
-						left: 0;
-
-						width: 105%;
-						height: 105%;
-
-						background-color: $copy-grey;
-						opacity: 0.7;
-
-						transform-origin: center center;
-
-						transform: rotate(45deg) translateX(-105%);
-
-						transition: transform 0.2s linear;
-						transition-delay: 1.5s;
-
-						-webkit-backface-visibility: hidden;
-
-						&.animate {
-							transform: rotate(45deg) translateX(-55%);
-						}
-					}
-				}
 			}
+
+			// .splash-container {
+			// 	@include xy-center;
+			// 	transform: translate(-50%,-50%) scale(1);
+
+			// 	width: 80%;
+			// 	padding-bottom: 80%;
+
+			// 	transition: left 0.2s linear;
+			// 	transition-delay: 1.5s;
+
+			// 	@include respond-to('small') {
+			// 		width: 30%;
+			// 		padding-bottom: 30%;
+			// 	}
+
+			// 	&.animate {
+			// 		left: 55%;
+			// 	}
+
+			// 	.splash-copy-container {
+			// 		@include y-center;
+			// 		left: -100%;
+			// 		z-index: 4;
+
+			// 		width: 100%;
+			// 		height: 100%;
+
+			// 		background-color: white;
+
+			// 		transition: left 0.2s linear;
+			// 		transition-delay: 1.5s;
+
+			// 		&.animate {
+			// 			left: -90%;
+			// 		}
+
+			// 		.splash-copy {
+			// 			margin-top: 40%;
+			// 			margin-right: 3%;
+
+			// 			font-size: 1.7rem;
+			// 			font-family: $font-open;
+			// 			font-weight: $light;
+			// 			font-style: normal;
+			// 			text-align: right;
+			// 			text-transform: uppercase;
+			// 			line-height: 1.7;
+			// 			letter-spacing: 2px;
+			// 			color: $copy-grey;
+
+			// 			-webkit-font-smoothing: subpixel-antialiased;
+
+			// 			opacity: 0;
+
+			// 			transition: opacity 0.4s linear;
+			// 			transition-delay: 3s;
+
+			// 			&.animate {
+			// 				opacity: 1;
+			// 			}
+
+			// 			strong {
+			// 				font-family: $font-pt;
+			// 				font-weight: $bold;
+			// 				font-style: italic;
+			// 				text-transform: none;
+			// 				color: $mustard;
+			// 			}
+			// 		}
+			// 	}
+
+			// 	.splash-logo {
+			// 		position: absolute;
+			// 		top: 2%;
+			// 		left: -10%;
+			// 		z-index: 4;
+
+			// 		width: 33.33333333%;
+			// 		padding-bottom: 33.33333333%;
+			// 		text-align: center;
+
+			// 		border-radius: 50%;
+
+			// 		background-color: $grey;
+
+			// 		transform: scale(0);
+
+			// 		transition: transform 0.3s linear;
+			// 		transition-delay: 1s;
+
+			// 		&.animate {
+			// 			transform: scale(1);
+			// 		}
+
+			// 		img {
+			// 			width: 70px;
+			// 		}
+
+			// 		.letter-container {
+			// 			@include xy-center;
+
+			// 			width: 100%;
+
+			// 			p {
+			// 				position: relative;
+
+			// 				display: inline-block;
+
+			// 				margin: 0;
+			// 				padding: 0;
+			// 				margin-right: 19px;
+
+			// 				font-family: $font-open;
+			// 				font-weight: $regular;
+			// 				font-size: 2.5vh;
+			// 				color: white;
+
+			// 				opacity: 0;
+
+			// 				-webkit-font-smoothing: subpixel-antialiased;
+
+			// 				&:last-of-type {
+			// 					margin-right: 0;
+			// 				}
+			// 				&:last-of-type:after {
+			// 					display: none;
+			// 				}
+
+			// 				&:after {
+			// 					content: "";
+
+			// 					display: inline-block;
+
+			// 					position: absolute;
+			// 					bottom: 5px;
+			// 					right: -14px;
+
+			// 					width: 4px;
+			// 					height: 4px;
+
+			// 					border-radius: 50%;
+
+			// 					background-color: $mustard;
+			// 				}
+
+			// 				&.one, &.two, &.three {
+			// 					transition: opacity 0.3s linear;
+
+			// 					&.animate {
+			// 						opacity: 1;
+			// 					}
+			// 				}
+			// 				&.one {
+			// 					transition-delay: 2s;
+			// 				}
+			// 				&.two {
+			// 					transition-delay: 2.3s;
+			// 				}
+			// 				&.three {
+			// 					transition-delay: 2.6s;
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// 	.splash-img {
+			// 		overflow: hidden;
+
+			// 		@include xy-center;
+			// 		transform: translate(-50%,-50%) scale(0);
+
+			// 		width: 100%;
+			// 		padding-bottom: 100%;
+
+			// 		border-radius: 50%;
+
+			// 		background-image: url('../img/splash.png');
+			// 		background-size: 100% 100%;
+
+			// 		transition: transform 0.3s linear;
+			// 		transition-delay: 1s;
+
+			// 		&.animate {
+			// 			transform: translate(-50%,-50%) scale(1);
+			// 		}
+
+			// 		.splash-img-shade {
+			// 			position: absolute;
+			// 			top: 0;
+			// 			left: 0;
+
+			// 			width: 105%;
+			// 			height: 105%;
+
+			// 			background-color: $copy-grey;
+			// 			opacity: 0.7;
+
+			// 			transform-origin: center center;
+
+			// 			transform: rotate(45deg) translateX(-105%);
+
+			// 			transition: transform 0.2s linear;
+			// 			transition-delay: 1.5s;
+
+			// 			-webkit-backface-visibility: hidden;
+
+			// 			&.animate {
+			// 				transform: rotate(45deg) translateX(-55%);
+			// 			}
+			// 		}
+			// 	}
+			// }
 		}
 	}
 
 	// UX //
 
 	#ux {
+		height: 800px;
 		background-color: $light-grey;
 
 		.ux-cases {
@@ -347,6 +351,7 @@
 	// About //
 
 	#about {
+		height: 750px;
 		background-color: $light-blue;
 
 		.about-section {
@@ -449,7 +454,7 @@
 	// Contact //
 
 	#contact {
-		min-height: 75vh;
+		height: 600px;
 		background-color: $light-grey;
 
 		.photo-section {

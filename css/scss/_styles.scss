@@ -463,6 +463,10 @@ header {
 		nav {
 			display: none;
 
+			@include respond-to('small') {
+				display: block;
+			}
+
 			@include y-center;
 			right: 40px;
 
@@ -474,8 +478,11 @@ header {
 				text-transform: uppercase;
 				font-weight: $regular;
 
+				opacity: 1;
+
 				&:hover, &:active {
 					text-decoration: none;
+					opacity: 0.8
 				}
 			}
 		}
