@@ -5646,7 +5646,7 @@ h1 {
   overflow: hidden; }
   .h2-wrap .h2-helper {
     width: 100%;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -5654,8 +5654,14 @@ h1 {
     text-transform: none;
     letter-spacing: 2px;
     color: #c5ab55;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     border-bottom: 2px solid #c5ab55; }
+    @media only screen and (min-width: 992px) {
+      .h2-wrap .h2-helper {
+        font-size: 2.1rem; } }
+    @media only screen and (min-width: 1200px) {
+      .h2-wrap .h2-helper {
+        margin-bottom: 24px; } }
     .h2-wrap .h2-helper.red-heading {
       color: #d57f75;
       border-bottom: 2px solid #d57f75; }
@@ -5663,7 +5669,9 @@ h1 {
       color: white;
       border-bottom: 2px solid white; }
   .h2-wrap.short {
-    width: 30%; }
+    width: 35%; }
+  .h2-wrap.short-2 {
+    width: 45%; }
 
 h2 {
   float: none;
@@ -5671,7 +5679,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 0;
   padding-top: 3px;
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -5682,9 +5690,15 @@ h2 {
   @media only screen and (min-width: 768px) {
     h2 {
       float: left;
-      padding-bottom: 20px;
+      padding-bottom: 4px;
       margin-top: 0;
       margin-bottom: 10px; } }
+  @media only screen and (min-width: 992px) {
+    h2 {
+      font-size: 2.1rem; } }
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      padding-bottom: 20px; } }
 
 h3 {
   display: inline-block;
@@ -5719,20 +5733,24 @@ h3 {
 h4 {
   display: block;
   padding-bottom: 5px;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
   color: white;
   border-bottom: 2px solid white; }
+  @media only screen and (min-width: 992px) {
+    h4 {
+      font-size: 2.1rem;
+      letter-spacing: 2px; } }
 
 h5 {
   position: relative;
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-size: 2.1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -5741,7 +5759,13 @@ h5 {
   text-transform: uppercase;
   text-align: center;
   color: white;
-  background-color: #5e5e5e; }
+  background-color: #5e5e5e;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d57f75; }
+  @media only screen and (min-width: 768px) {
+    h5 {
+      border: none;
+      padding-bottom: 0; } }
   h5:before, h5:after {
     content: "";
     position: absolute;
@@ -5749,9 +5773,18 @@ h5 {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 30%;
+    width: 0;
     height: 2px;
     background-color: #c5ab55; }
+    @media only screen and (min-width: 768px) {
+      h5:before, h5:after {
+        width: 18%; } }
+    @media only screen and (min-width: 992px) {
+      h5:before, h5:after {
+        width: 25%; } }
+    @media only screen and (min-width: 1200px) {
+      h5:before, h5:after {
+        width: 30%; } }
   h5.red:before, h5.red:after {
     background-color: #d57f75; }
   h5:before {
@@ -5762,7 +5795,7 @@ h5 {
 h6 {
   display: inline-block;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 3px 10% 5px;
   font-size: 2.1rem;
   font-family: "Open Sans", sans-serif;
@@ -5785,7 +5818,7 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 4%;
+  margin-bottom: 10px;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -5921,7 +5954,7 @@ section {
 footer {
   position: relative;
   width: 100%;
-  min-height: 19vh;
+  height: 150px;
   background-color: #c5ab55; }
   footer .text-container {
     position: absolute;
@@ -6232,7 +6265,7 @@ footer {
                 -ms-transform: rotate(45deg) translateX(-55%);
                     transform: rotate(45deg) translateX(-55%); }
 #landing #ux {
-  background-color: #eef0f0; }
+  background-color: #eaeded; }
   #landing #ux .ux-cases {
     padding-left: 3%;
     padding-right: 3%;
@@ -6359,7 +6392,7 @@ footer {
         margin: 0 0.56%; }
 #landing #contact {
   min-height: 75vh;
-  background-color: #eef0f0; }
+  background-color: #eaeded; }
   #landing #contact .photo-section {
     position: relative;
     height: 65vh;
@@ -6495,10 +6528,14 @@ footer {
   color: #fff; }
 #case-study section .sub-section {
   position: relative;
-  margin: 0; }
-  @media only screen and (min-width: 768px) {
+  margin: 0;
+  padding: 20px 0 20px; }
+  @media only screen and (min-width: 992px) {
     #case-study section .sub-section {
-      padding: 40px 0 40px 0; } }
+      padding: 30px 0 30px; } }
+  @media only screen and (min-width: 1200px) {
+    #case-study section .sub-section {
+      padding: 40px 0 40px; } }
 #case-study section .bg-blue {
   background-color: #afd8d8; }
 #case-study section .bg-light-blue {
@@ -6506,7 +6543,7 @@ footer {
 #case-study section .bg-red {
   background-color: #d57f75; }
 #case-study section .bg-grey {
-  background-color: #eef0f0; }
+  background-color: #eaeded; }
 #case-study section .bg-dark-grey {
   background-color: #5e5e5e; }
 #case-study section .bg-mustard {
@@ -6549,6 +6586,12 @@ footer {
     text-align: center; }
     @media only screen and (min-width: 768px) {
       #case-study #intro .splash {
+        min-height: 280px; } }
+    @media only screen and (min-width: 992px) {
+      #case-study #intro .splash {
+        min-height: 400px; } }
+    @media only screen and (min-width: 1200px) {
+      #case-study #intro .splash {
         min-height: 470px; } }
     #case-study #intro .splash.magic {
       height: 320px; }
@@ -6568,6 +6611,12 @@ footer {
     position: relative;
     text-align: center; }
     @media only screen and (min-width: 768px) {
+      #case-study #intro .title {
+        min-height: 280px; } }
+    @media only screen and (min-width: 992px) {
+      #case-study #intro .title {
+        min-height: 400px; } }
+    @media only screen and (min-width: 1200px) {
       #case-study #intro .title {
         min-height: 470px; } }
     #case-study #intro .title.magic {
@@ -6591,12 +6640,18 @@ footer {
       #case-study #intro .container {
         padding-top: 30px;
         padding-bottom: 30px; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
+    #case-study #intro .intro-left, #case-study #intro .intro-right, #case-study #intro .summary-left, #case-study #intro .summary-right {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (min-width: 1200px) {
     #case-study #intro .intro-left, #case-study #intro .intro-right, #case-study #intro .summary-left, #case-study #intro .summary-right {
       padding-left: 60px;
       padding-right: 60px; } }
   #case-study #intro .intro-left p, #case-study #intro .intro-left li, #case-study #intro .intro-right p, #case-study #intro .intro-right li {
     color: #3d3e3e; }
+  #case-study #intro .intro-left.lifeally p {
+    margin-bottom: 60px; }
   #case-study #intro .divider-left {
     position: relative; }
     @media only screen and (min-width: 768px) {
@@ -6631,17 +6686,29 @@ footer {
     #case-study #intro .approach .approach-link {
       position: relative;
       display: inline-block;
-      margin-top: 40px;
+      margin-top: 25px;
       margin-bottom: 50px;
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
       font-style: normal;
       text-transform: uppercase;
       text-decoration: underline;
       color: #c5ab55; }
+      @media only screen and (min-width: 992px) {
+        #case-study #intro .approach .approach-link {
+          font-size: 1.9rem; } }
       #case-study #intro .approach .approach-link.arrow {
-        margin-right: 100px; }
+        margin-right: 60px; }
+        @media only screen and (min-width: 768px) {
+          #case-study #intro .approach .approach-link.arrow {
+            margin-right: 60px; } }
+        @media only screen and (min-width: 992px) {
+          #case-study #intro .approach .approach-link.arrow {
+            margin-right: 75px; } }
+        @media only screen and (min-width: 1200px) {
+          #case-study #intro .approach .approach-link.arrow {
+            margin-right: 100px; } }
         #case-study #intro .approach .approach-link.arrow:after {
           content: ">";
           position: absolute;
@@ -6651,8 +6718,18 @@ footer {
                   transform: translateY(-50%);
           right: -65px;
           font-weight: 700;
-          font-size: 2.4rem;
+          font-size: 2.2rem;
           color: #afd8d8; }
+          @media only screen and (min-width: 768px) {
+            #case-study #intro .approach .approach-link.arrow:after {
+              right: -44px; } }
+          @media only screen and (min-width: 992px) {
+            #case-study #intro .approach .approach-link.arrow:after {
+              right: -50px;
+              font-size: 2.4rem; } }
+          @media only screen and (min-width: 1200px) {
+            #case-study #intro .approach .approach-link.arrow:after {
+              right: -65px; } }
       #case-study #intro .approach .approach-link.red {
         color: #d57f75; }
       #case-study #intro .approach .approach-link:hover {
@@ -6660,13 +6737,20 @@ footer {
 #case-study #research {
   overflow: hidden; }
   #case-study #research .persona-container {
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media only screen and (min-width: 1200px) {
+      #case-study #research .persona-container {
+        padding-left: 20px;
+        padding-right: 20px; } }
     #case-study #research .persona-container .persona-card {
       width: 100%;
-      min-height: 350px;
+      min-height: 415px;
       padding: 10px;
       background-color: white; }
+      @media only screen and (min-width: 992px) {
+        #case-study #research .persona-container .persona-card {
+          min-height: 350px; } }
       #case-study #research .persona-container .persona-card .persona-thumbnail {
         width: 48%;
         float: left; }
@@ -6731,9 +6815,21 @@ footer {
       margin-bottom: 20px; }
   #case-study #research .hypothesis {
     width: 100%;
-    margin-top: 300px; }
+    margin-top: 200px; }
+    @media only screen and (min-width: 992px) {
+      #case-study #research .hypothesis {
+        margin-top: 210px; } }
+    @media only screen and (min-width: 1200px) {
+      #case-study #research .hypothesis {
+        margin-top: 300px; } }
   #case-study #research .comparison {
     margin-top: 10px; }
+  @media only screen and (min-width: 768px) {
+    #case-study #research .surveys {
+      padding-right: 60px; } }
+  @media only screen and (min-width: 768px) {
+    #case-study #research .interview {
+      padding-right: 60px; } }
 #case-study #iterative-design {
   overflow: hidden; }
   #case-study #iterative-design .container {
@@ -6761,10 +6857,10 @@ footer {
       text-align: center;
       color: #c5ab55; }
   #case-study #iterative-design .intro-left {
-    padding: 60px 15px 0;
+    padding: 60px 60px 0 15px;
     text-align: center; }
   #case-study #iterative-design .intro-right {
-    padding: 160px 15px 0;
+    padding: 140px 15px 0;
     text-align: center; }
   #case-study #iterative-design .sitemap {
     padding: 30px 60px; }
@@ -6811,8 +6907,13 @@ footer {
   #case-study #iterative-design .id-analysis {
     height: 360px;
     margin-bottom: 10px; }
+  #case-study #iterative-design .site-map {
+    padding-right: 40px; }
 #case-study #prototype-development .prototype-left {
-  padding: 40px 0 150px; }
+  padding: 40px 0 60px; }
+  @media only screen and (min-width: 1200px) {
+    #case-study #prototype-development .prototype-left {
+      padding: 40px 0 150px; } }
   #case-study #prototype-development .prototype-left.pozible {
     padding-bottom: 0; }
 #case-study #prototype-development .prototype-right {
@@ -6832,6 +6933,8 @@ footer {
     #case-study #prototype-development .prototype-thumbnail-container .prototype-thumbnail img {
       max-height: 270px;
       margin-top: 10px; }
+  #case-study #prototype-development .prototype-thumbnail-container.pozible {
+    padding: 0; }
 #case-study #prototype-development .prototype-link-thumbnail {
   width: 80%; }
 #case-study #prototype-development .prototype-link {
@@ -6869,9 +6972,12 @@ footer {
   display: inherit;
   margin: 0 auto;
   width: 70%;
-  margin-bottom: 20px; }
+  margin-bottom: 5px; }
 #case-study #prototype-development .outcome {
-  padding: 60px 15px 100px; }
+  padding: 30px 15px 50px; }
+  @media only screen and (min-width: 1200px) {
+    #case-study #prototype-development .outcome {
+      padding: 60px 15px 100px; } }
   #case-study #prototype-development .outcome .outcome-item {
     display: block;
     font-size: 1.5rem;

@@ -56,7 +56,7 @@ textarea {
 // ----- Variables ----- //
 
 // Colours //
-$light-grey:    #eef0f0; // grey background
+$light-grey:    #eaeded; // grey background
 $grey:          #9d9d9d; // header, r.e.l logo
 $dark-grey:   	#858585; // grey hex
 $darker-grey:  	#3d3e3e; // dark grey hex
@@ -166,7 +166,7 @@ h1 {
 	.h2-helper {
 		width: 100%;
 
-		font-size: 2.1rem;
+		font-size: 1.6rem;
 		font-family: $font-pt;
 		font-weight: $bold;
 		font-style: italic;
@@ -175,9 +175,17 @@ h1 {
 		letter-spacing: 2px;
 		color: $mustard;
 
-		margin-bottom: 24px;
+		margin-bottom: 10px;
 
 		border-bottom: 2px solid $mustard;
+
+		@include respond-to('medium') {
+			font-size: 2.1rem;
+		}
+
+		@include respond-to('large') {
+			margin-bottom: 24px;
+		}
 
 		&.red-heading {
 			color: $red;
@@ -192,7 +200,11 @@ h1 {
 	}
 
 	&.short {
-		width: 30%;
+		width: 35%;
+	}
+
+	&.short-2 {
+		width: 45%;
 	}
 }
 
@@ -204,7 +216,7 @@ h2 {
 	margin-bottom: 0;
 	padding-top: 3px;
 
-	font-size: 2.1rem;
+	font-size: 1.6rem;
 	font-family: $font-open;
 	font-weight: $regular;
 	font-style: normal;
@@ -216,9 +228,15 @@ h2 {
 	@include respond-to('small') {
 		float: left;
 
-		padding-bottom: 20px;
+		padding-bottom: 4px;
 		margin-top: 0;
 		margin-bottom: 10px;
+	}
+	@include respond-to('medium') {
+		font-size: 2.1rem;
+	}
+	@include respond-to('large') {
+		padding-bottom: 20px;
 	}
 }
 
@@ -260,24 +278,29 @@ h4 {
 	display: block;
 	padding-bottom: 5px;
 
-	font-size: 2.1rem;
+	font-size: 1.8rem;
 	font-family: $font-open;
 	font-weight: $regular;
 	font-style: normal;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: left;
 
 	color: white;
 
 	border-bottom: 2px solid white;
+
+	@include respond-to('medium') {
+		font-size: 2.1rem;
+		letter-spacing: 2px;
+	}
 }
 
 h5 {
 	position: relative;
 	display: block;
 
-	margin-bottom: 0;
+	margin-bottom: 20px;
 
 	font-size: 2.1rem;
 	font-family: $font-open;
@@ -290,14 +313,34 @@ h5 {
 
 	background-color: $copy-grey;
 
+	padding-bottom: 5px;
+	border-bottom: 2px solid $red;
+
+	@include respond-to('small') {
+		border: none;
+		padding-bottom: 0;
+	}
+
 	&:before, &:after {
 		content: "";
 
 		@include y-center;
-		width: 30%;
+		width: 0;
 		height: 2px;
 
 		background-color: $mustard;
+
+		@include respond-to('small') {
+			width: 18%;
+		}
+
+		@include respond-to('medium') {
+			width: 25%;
+		}
+
+		@include respond-to('large') {
+			width: 30%;
+		}
 	}
 	&.red:before, &.red:after {
 		background-color: $red;
@@ -316,7 +359,7 @@ h6 {
 	display: inline-block;
 
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	padding: 3px 10% 5px;
 
 	font-size: 2.1rem;
@@ -344,7 +387,7 @@ h6 {
 
 p {
 	margin-top: 0;
-	margin-bottom: 4%;
+	margin-bottom: 10px;
 
 	font-size: 1.6rem;
 	font-family: $font-open;
@@ -522,7 +565,7 @@ section {
 footer {
 	position: relative;
 	width: 100%;
-	min-height: 19vh;
+	height: 150px;
 
 	background-color: $mustard;
 
