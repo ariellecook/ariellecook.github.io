@@ -260,7 +260,7 @@
 	// UX //
 
 	#ux {
-		height: 800px;
+		height: 700px;
 		background-color: $light-grey;
 
 		.ux-cases {
@@ -351,11 +351,11 @@
 	// About //
 
 	#about {
-		height: 750px;
+		height: 700px;
 		background-color: $light-blue;
 
 		.about-section {
-			height: 80vh;
+			height: 625px;
 			padding: 4%;
 			text-align: center;
 
@@ -407,7 +407,7 @@
 		.skills-section {
 			position: relative;
 
-			height: 80vh;
+			height: 625px;
 			padding: 4%;
 
 			text-align: center;
@@ -415,6 +415,7 @@
 			.hex-container {
 				width: 100%;
 				@include xy-center;
+				top: 53%;
 
 				.hex-row {
 					&.middle {
@@ -460,7 +461,7 @@
 		.photo-section {
 			position: relative;
 
-			height: 65vh;
+			height: 500px;
 			padding: 4%;
 
 			text-align: center;
@@ -487,7 +488,7 @@
 
 		.details-section {
 			position: relative;
-			height: 65vh;
+			height: 500px;
 			padding: 4%;
 
 			text-align: center;
@@ -545,7 +546,7 @@
 
 						margin-left: 20%;
 
-						font-size: 1.8vh;
+						font-size: 1.4rem;
 						font-family: $font-open;
 						font-weight: $regular;
 						font-style: normal;
@@ -560,7 +561,7 @@
 
 							padding-left: 20px;
 
-							font-size: 2.2vh;
+							font-size: 1.7rem;
 							font-weight: $light;
 							text-transform: none;
 							text-align: left;
