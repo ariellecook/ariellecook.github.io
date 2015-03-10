@@ -5662,6 +5662,8 @@ h1 {
     .h2-wrap .h2-helper.white-heading {
       color: white;
       border-bottom: 2px solid white; }
+  .h2-wrap.short {
+    width: 30%; }
 
 h2 {
   float: none;
@@ -5756,6 +5758,30 @@ h5 {
     left: 0; }
   h5:after {
     right: 0; }
+
+h6 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 3px 10% 5px;
+  font-size: 2.1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #5e5e5e;
+  border-bottom: 2px solid white; }
+  h6 strong {
+    font-size: 2.1rem;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 2px;
+    color: white; }
 
 p {
   margin-top: 0;
@@ -6468,10 +6494,11 @@ footer {
   letter-spacing: 2px;
   color: #fff; }
 #case-study section .sub-section {
+  position: relative;
   margin: 0; }
   @media only screen and (min-width: 768px) {
     #case-study section .sub-section {
-      padding: 25px 0 25px 0; } }
+      padding: 40px 0 40px 0; } }
 #case-study section .bg-blue {
   background-color: #afd8d8; }
 #case-study section .bg-light-blue {
@@ -6486,6 +6513,32 @@ footer {
   background-color: #c5ab55; }
 #case-study section .bg-white {
   background-color: #fff; }
+#case-study section .pozible-id-half {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  #case-study section .pozible-id-half.pie {
+    width: 36%; }
+#case-study section .pozible-res-half {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -73%;
+  background-image: url("/img/pozible-whiteboard.jpg");
+  background-repeat: no-repeat;
+  background-position: right; }
+#case-study section .lifeally-half {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/img/lifeally-sketch.jpg");
+  background-repeat: no-repeat;
+  background-position: left; }
 #case-study #intro {
   padding-top: 50px; }
   @media only screen and (min-width: 768px) {
@@ -6567,6 +6620,7 @@ footer {
         height: 100%;
         background-color: white; } }
   #case-study #intro .approach {
+    margin-top: 50px;
     font-size: 2.1rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -6577,8 +6631,8 @@ footer {
     #case-study #intro .approach .approach-link {
       position: relative;
       display: inline-block;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      margin-top: 40px;
+      margin-bottom: 50px;
       font-size: 1.9rem;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
@@ -6603,85 +6657,88 @@ footer {
         color: #d57f75; }
       #case-study #intro .approach .approach-link:hover {
         color: #9d9d9d; }
-#case-study #research .persona-container {
-  padding-left: 20px;
-  padding-right: 20px; }
-  #case-study #research .persona-container .persona-card {
-    width: 100%;
-    min-height: 350px;
-    padding: 10px;
-    background-color: white; }
-    #case-study #research .persona-container .persona-card .persona-thumbnail {
-      width: 48%;
-      float: left; }
-    #case-study #research .persona-container .persona-card .name-container {
-      width: 48%;
-      float: right; }
-      #case-study #research .persona-container .persona-card .name-container .persona-name {
-        width: 100%;
-        height: 40px;
-        background-color: #afd8d8;
-        font-size: 1.7rem;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 44px;
-        color: white; }
-      #case-study #research .persona-container .persona-card .name-container .persona-quote {
-        margin-top: 10px;
-        font-size: 1.6rem;
-        font-family: "PT Sans", sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        color: #9d9d9d; }
-    #case-study #research .persona-container .persona-card .details {
-      clear: both;
-      padding-top: 10px; }
-      #case-study #research .persona-container .persona-card .details .heading {
-        font-size: 1.3rem;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #c5ab55; }
-      #case-study #research .persona-container .persona-card .details ul {
-        color: #5e5e5e;
-        padding-left: 20px; }
-        #case-study #research .persona-container .persona-card .details ul li {
+#case-study #research {
+  overflow: hidden; }
+  #case-study #research .persona-container {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #case-study #research .persona-container .persona-card {
+      width: 100%;
+      min-height: 350px;
+      padding: 10px;
+      background-color: white; }
+      #case-study #research .persona-container .persona-card .persona-thumbnail {
+        width: 48%;
+        float: left; }
+      #case-study #research .persona-container .persona-card .name-container {
+        width: 48%;
+        float: right; }
+        #case-study #research .persona-container .persona-card .name-container .persona-name {
+          width: 100%;
+          height: 40px;
+          background-color: #afd8d8;
+          font-size: 1.7rem;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 44px;
+          color: white; }
+        #case-study #research .persona-container .persona-card .name-container .persona-quote {
+          margin-top: 10px;
+          font-size: 1.6rem;
+          font-family: "PT Sans", sans-serif;
+          font-weight: 700;
+          font-style: italic;
+          letter-spacing: 1px;
+          line-height: 1.2;
+          color: #9d9d9d; }
+      #case-study #research .persona-container .persona-card .details {
+        clear: both;
+        padding-top: 10px; }
+        #case-study #research .persona-container .persona-card .details .heading {
+          font-size: 1.3rem;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #c5ab55; }
+        #case-study #research .persona-container .persona-card .details ul {
           color: #5e5e5e;
-          font-size: 1.3rem; }
-#case-study #research .quote {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #d57f75; }
-#case-study #research .pie-chart {
-  width: 90%; }
-#case-study #research .hypothesis {
-  width: 90%; }
+          padding-left: 20px; }
+          #case-study #research .persona-container .persona-card .details ul li {
+            color: #5e5e5e;
+            font-size: 1.3rem; }
+  #case-study #research .quote {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #d57f75; }
+  #case-study #research .pie-charts {
+    text-align: center; }
+    #case-study #research .pie-charts .pie-chart {
+      width: 80%;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+  #case-study #research .hypothesis {
+    width: 100%;
+    margin-top: 300px; }
+  #case-study #research .comparison {
+    margin-top: 10px; }
 #case-study #iterative-design {
   overflow: hidden; }
   #case-study #iterative-design .container {
     position: relative;
     padding: 0; }
-  #case-study #iterative-design .pozible-id-half {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 70px;
-    right: 0; }
   #case-study #iterative-design .id-heading {
     position: relative;
     width: 100%;
@@ -6703,8 +6760,12 @@ footer {
       border-bottom: 2px solid #c5ab55;
       text-align: center;
       color: #c5ab55; }
-  #case-study #iterative-design .intro {
-    padding: 60px 15px 100px; }
+  #case-study #iterative-design .intro-left {
+    padding: 60px 15px 0;
+    text-align: center; }
+  #case-study #iterative-design .intro-right {
+    padding: 160px 15px 0;
+    text-align: center; }
   #case-study #iterative-design .sitemap {
     padding: 30px 60px; }
   #case-study #iterative-design .userflow {
@@ -6731,6 +6792,11 @@ footer {
         left: 0;
         width: 60px;
         height: 60px; }
+  #case-study #iterative-design .userflows {
+    width: 60%;
+    margin-top: 30px; }
+  #case-study #iterative-design .priority-map {
+    width: 100%; }
   #case-study #iterative-design .id-thumbnail {
     text-align: center;
     color: #d57f75;
@@ -6746,7 +6812,9 @@ footer {
     height: 360px;
     margin-bottom: 10px; }
 #case-study #prototype-development .prototype-left {
-  padding: 100px 0 150px; }
+  padding: 40px 0 150px; }
+  #case-study #prototype-development .prototype-left.pozible {
+    padding-bottom: 0; }
 #case-study #prototype-development .prototype-right {
   text-align: center; }
 #case-study #prototype-development .lifeally-prototype {
