@@ -5816,6 +5816,21 @@ h6 {
     letter-spacing: 2px;
     color: white; }
 
+.h7 {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c5ab55;
+  font-size: 2.1rem;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 2px;
+  color: #c5ab55; }
+
 p {
   margin-top: 0;
   margin-bottom: 10px;
@@ -6104,7 +6119,7 @@ footer {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
 #landing #ux {
-  height: 800px;
+  height: 700px;
   background-color: #eaeded; }
   #landing #ux .ux-cases {
     padding-left: 3%;
@@ -6172,10 +6187,10 @@ footer {
       #landing #ux .ux-cases .ux-img.lifeally {
         background-image: url("../img/ux-lifeally.png"); }
 #landing #about {
-  height: 750px;
+  height: 700px;
   background-color: #d8ecec; }
   #landing #about .about-section {
-    height: 80vh;
+    height: 625px;
     padding: 4%;
     text-align: center; }
     #landing #about .about-section p {
@@ -6214,7 +6229,7 @@ footer {
         background-color: #9d9d9d; }
   #landing #about .skills-section {
     position: relative;
-    height: 80vh;
+    height: 625px;
     padding: 4%;
     text-align: center; }
     #landing #about .skills-section .hex-container {
@@ -6224,7 +6239,8 @@ footer {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+              transform: translate(-50%, -50%);
+      top: 53%; }
       #landing #about .skills-section .hex-container .hex-row.middle {
         margin: -4.4% 0 -4.4% 0; }
       #landing #about .skills-section .hex-container .hex-row .hex {
@@ -6236,7 +6252,7 @@ footer {
   background-color: #eaeded; }
   #landing #contact .photo-section {
     position: relative;
-    height: 65vh;
+    height: 500px;
     padding: 4%;
     text-align: center; }
     #landing #contact .photo-section .contact-photo-wrapper {
@@ -6262,7 +6278,7 @@ footer {
         background-size: contain; }
   #landing #contact .details-section {
     position: relative;
-    height: 65vh;
+    height: 500px;
     padding: 4%;
     text-align: center; }
     #landing #contact .details-section .contact-wrapper {
@@ -6312,7 +6328,7 @@ footer {
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%);
           margin-left: 20%;
-          font-size: 1.8vh;
+          font-size: 1.4rem;
           font-family: "Open Sans", sans-serif;
           font-weight: 400;
           font-style: normal;
@@ -6327,7 +6343,7 @@ footer {
             left: 100%;
             width: 400%;
             padding-left: 20px;
-            font-size: 2.2vh;
+            font-size: 1.7rem;
             font-weight: 300;
             text-transform: none;
             text-align: left; }
@@ -6404,7 +6420,7 @@ footer {
   height: 100%;
   position: absolute;
   top: 0;
-  left: -73%;
+  left: -75%;
   background-image: url("/img/pozible-whiteboard.jpg");
   background-repeat: no-repeat;
   background-position: right; }
@@ -6656,7 +6672,7 @@ footer {
       margin-top: 20px;
       margin-bottom: 20px; }
   #case-study #research .hypothesis {
-    width: 100%;
+    width: 95%;
     margin-top: 50px; }
     @media only screen and (min-width: 992px) {
       #case-study #research .hypothesis {
@@ -6667,8 +6683,8 @@ footer {
   #case-study #research .comparison {
     margin-top: 10px; }
   @media only screen and (min-width: 768px) {
-    #case-study #research .surveys {
-      padding-right: 60px; } }
+    #case-study #research .surveys p {
+      padding-right: 200px; } }
   @media only screen and (min-width: 768px) {
     #case-study #research .interview {
       padding-right: 60px; } }
@@ -6836,3 +6852,45 @@ footer {
   #case-study #prototype-development .outcome .outcome-copy {
     margin-top: 30px;
     margin-bottom: 20px; }
+
+#other-work section {
+  padding-top: 100px;
+  border-bottom: 2px solid #9d9d9d; }
+  #other-work section .container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 49%; }
+    #other-work section .container .row {
+      height: inherit; }
+#other-work #intro {
+  height: 95vh;
+  padding-top: 50px;
+  background-color: white; }
+  @media only screen and (min-width: 768px) {
+    #other-work #intro {
+      padding-top: 70px; } }
+  #other-work #intro .home-container {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+    height: 100%;
+    padding: 0;
+    text-align: center; }
+#other-work #design {
+  height: 700px;
+  background-color: #eaeded; }
+#other-work #fashion {
+  height: 700px;
+  background-color: #d8ecec; }
+  #other-work #fashion #fashion-carousel {
+    display: inline-block;
+    width: 726px;
+    margin-top: 20px; }
