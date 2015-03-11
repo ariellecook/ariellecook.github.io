@@ -5895,6 +5895,7 @@ header {
           display: block; } }
       header .nav-container nav a {
         margin-left: 20px;
+        padding-bottom: 2px;
         color: white;
         font-size: 1.5rem;
         text-transform: uppercase;
@@ -5905,19 +5906,19 @@ header {
           opacity: 0.8; }
 
 #page-home #nav-home {
-  color: #c5ab55; }
+  border-bottom: 1px solid white; }
 
 #page-magic #nav-magic {
-  color: #c5ab55; }
+  border-bottom: 1px solid white; }
 
 #page-pozible #nav-pozible {
-  color: #c5ab55; }
+  border-bottom: 1px solid white; }
 
 #page-lifeally #nav-lifeally {
-  color: #c5ab55; }
+  border-bottom: 1px solid white; }
 
 #page-other #nav-other {
-  color: #c5ab55; }
+  border-bottom: 1px solid white; }
 
 section {
   position: relative;
@@ -6094,12 +6095,9 @@ footer {
     #landing section .container .row {
       height: inherit; }
 #landing #home {
-  height: 95vh;
-  padding-top: 50px;
+  height: 85vh;
+  padding-top: 0;
   background-color: white; }
-  @media only screen and (min-width: 768px) {
-    #landing #home {
-      padding-top: 70px; } }
   #landing #home .home-container {
     position: relative !important;
     top: auto !important;
@@ -6868,25 +6866,49 @@ footer {
     #other-work section .container .row {
       height: inherit; }
 #other-work #intro {
-  height: 95vh;
+  height: 85vh;
   padding-top: 50px;
   background-color: white; }
   @media only screen and (min-width: 768px) {
     #other-work #intro {
       padding-top: 70px; } }
   #other-work #intro .home-container {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    -webkit-transform: none !important;
-        -ms-transform: none !important;
-            transform: none !important;
-    height: 100%;
-    padding: 0;
     text-align: center; }
+    #other-work #intro .home-container .other-title {
+      display: inline-block;
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      top: 40%;
+      font-size: 1.8rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #5e5e5e; }
+      #other-work #intro .home-container .other-title strong {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #c5ab55;
+        text-transform: none; }
+      #other-work #intro .home-container .other-title .sub-title {
+        display: block;
+        float: right;
+        font-size: 1.3rem;
+        border-top: 2px solid #c5ab55; }
 #other-work #design {
   height: 700px;
   background-color: #eaeded; }
+  #other-work #design img {
+    width: 60%;
+    margin-top: 30px; }
 #other-work #fashion {
   height: 700px;
   background-color: #d8ecec; }

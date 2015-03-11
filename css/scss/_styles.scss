@@ -485,6 +485,7 @@ header {
 
 			a {
 				margin-left: 20px;
+				padding-bottom: 2px;
 
 				color: white;
 				font-size: 1.5rem;
@@ -504,27 +505,32 @@ header {
 
 #page-home {
 	#nav-home {
-		color: $mustard;
+		
+		border-bottom: 1px solid white;
 	}
 }
 #page-magic {
 	#nav-magic {
-		color: $mustard;
+		
+		border-bottom: 1px solid white;
 	}
 }
 #page-pozible {
 	#nav-pozible {
-		color: $mustard;
+		
+		border-bottom: 1px solid white;
 	}
 }
 #page-lifeally {
 	#nav-lifeally {
-		color: $mustard;
+		
+		border-bottom: 1px solid white;
 	}
 }
 #page-other {
 	#nav-other {
-		color: $mustard;
+		
+		border-bottom: 1px solid white;
 	}
 }
 

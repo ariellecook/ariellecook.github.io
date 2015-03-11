@@ -19,7 +19,7 @@
 	// Intro //
 
 	#intro {
-		height: 95vh;
+		height: 85vh;
 		padding-top: 50px;
 
 		background-color: white;
@@ -28,16 +28,42 @@
 			padding-top: 70px;
 		}
 		.home-container {
-			position: relative !important;
-			top: auto !important;
-			left: auto !important;
-			transform: none !important;
-
-
-			height: 100%;
-			padding: 0;
 
 			text-align: center;
+
+			.other-title {
+				display: inline-block;
+				width: 70%;
+
+				@include xy-center;
+				top: 40%;
+
+				font-size: 1.8rem;
+				font-family: $font-open;
+				font-weight: $regular;
+				font-style: normal;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				text-align: left;
+				color: $copy-grey;
+
+				strong {
+					font-family: $font-pt;
+					font-weight: $bold;
+					font-style: italic;
+					color: $mustard;
+					text-transform: none;
+				}
+
+				.sub-title {
+					display: block;
+					float: right;
+
+					font-size: 1.3rem;
+
+					border-top: 2px solid $mustard;
+				}
+			}
 		}
 	}
 
@@ -46,6 +72,12 @@
 	#design {
 		height: 700px;
 		background-color: $light-grey;
+
+		img {
+			width: 60%;
+
+			margin-top: 30px;
+		}
 
 	}
 

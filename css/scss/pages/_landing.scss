@@ -17,14 +17,11 @@
 	// Home //
 
 	#home {
-		height: 95vh;
-		padding-top: 50px;
+		height: 85vh;
+		padding-top: 0;
 
 		background-color: white;
 
-		@include respond-to('small') {
-			padding-top: 70px;
-		}
 		.home-container {
 			position: relative !important;
 			top: auto !important;
