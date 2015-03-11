@@ -198,7 +198,7 @@
     $.fn.animatescroll.defaults = {        
         easing:"swing",
         scrollSpeed:500,
-        padding: $('header').outerHeight(true) - 24,
+        padding: 0,
         element:"html,body"
     };   
     
