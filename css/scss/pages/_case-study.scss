@@ -81,7 +81,7 @@
 
 			position: absolute;
 			top: 0;
-			left: -73%;
+			left: -75%;
 
 			background-image: url('/img/pozible-whiteboard.jpg');
 			background-repeat: no-repeat;
@@ -440,7 +440,7 @@
 			}
 		}
 		.hypothesis {
-			width: 100%;
+			width: 95%;
 
 			margin-top: 50px;
 
@@ -455,9 +455,9 @@
 		.comparison {
 			margin-top: 10px;
 		}
-		.surveys {
+		.surveys p {
 			@include respond-to('small') {
-				padding-right: 60px;
+				padding-right: 200px;
 			}
 		}
 		.interview {
