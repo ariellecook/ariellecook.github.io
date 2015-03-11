@@ -416,12 +416,6 @@ li {
 // Header //
 
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 4;
-
 	width: 100%;
 	height: 50px;
 	margin-left: 0 !important;
@@ -486,6 +480,32 @@ header {
 				}
 			}
 		}
+	}
+}
+
+#page-home {
+	#nav-home {
+		color: $mustard;
+	}
+}
+#page-magic {
+	#nav-magic {
+		color: $mustard;
+	}
+}
+#page-pozible {
+	#nav-pozible {
+		color: $mustard;
+	}
+}
+#page-lifeally {
+	#nav-lifeally {
+		color: $mustard;
+	}
+}
+#page-other {
+	#nav-other {
+		color: $mustard;
 	}
 }
 
