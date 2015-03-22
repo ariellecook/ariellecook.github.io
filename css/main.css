@@ -6917,3 +6917,5 @@ footer {
     display: inline-block;
     width: 726px;
     margin-top: 20px; }
+    #other-work #fashion #fashion-carousel .carousel-indicators li.active {
+      background-color: #c5ab55; }

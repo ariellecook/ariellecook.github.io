@@ -92,6 +92,13 @@
 			width: 726px;
 
 			margin-top: 20px;
+
+			.carousel-indicators li {
+
+				&.active {
+					background-color: $mustard;
+				}
+			}
 		}
 	}
 }
