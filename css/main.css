@@ -6118,8 +6118,10 @@ footer {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
 #landing #ux {
-  height: 700px;
+  height: 1200px;
   background-color: #eaeded; }
+  #landing #ux .row:last-of-type {
+    margin-top: 70px; }
   #landing #ux .ux-cases {
     padding-left: 3%;
     padding-right: 3%;
@@ -6167,6 +6169,23 @@ footer {
           -webkit-transform: rotate(325deg) translateX(-101%);
               -ms-transform: rotate(325deg) translateX(-101%);
                   transform: rotate(325deg) translateX(-101%); }
+        #landing #ux .ux-cases .ux-img .ux-img-shade.shade-coming-soon {
+          opacity: 1;
+          background-color: rgba(94, 94, 94, 0); }
+          #landing #ux .ux-cases .ux-img .ux-img-shade.shade-coming-soon .coming-soon-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            color: rgba(255, 255, 255, 0);
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 28px;
+            width: 80%;
+            text-transform: uppercase; }
       #landing #ux .ux-cases .ux-img:hover > .ux-img-shade.shade-one {
         -webkit-transform: rotate(70deg) translateX(-50%);
             -ms-transform: rotate(70deg) translateX(-50%);
@@ -6179,12 +6198,22 @@ footer {
         -webkit-transform: rotate(325deg) translateX(-50%);
             -ms-transform: rotate(325deg) translateX(-50%);
                 transform: rotate(325deg) translateX(-50%); }
+      #landing #ux .ux-cases .ux-img:hover > .ux-img-shade.shade-coming-soon {
+        background-color: rgba(94, 94, 94, 0.7); }
+        #landing #ux .ux-cases .ux-img:hover > .ux-img-shade.shade-coming-soon .coming-soon-text {
+          color: white; }
       #landing #ux .ux-cases .ux-img.magic {
         background-image: url("../img/ux-magic.png"); }
       #landing #ux .ux-cases .ux-img.pozible {
         background-image: url("../img/ux-pozible.png"); }
       #landing #ux .ux-cases .ux-img.lifeally {
         background-image: url("../img/ux-lifeally.png"); }
+      #landing #ux .ux-cases .ux-img.camera {
+        background-image: url("../img/ux-camera.png"); }
+      #landing #ux .ux-cases .ux-img.vivid {
+        background-image: url("../img/ux-vivid.png"); }
+      #landing #ux .ux-cases .ux-img.bank {
+        background-image: url("../img/ux-bank.png"); }
 #landing #about {
   height: 700px;
   background-color: #d8ecec; }

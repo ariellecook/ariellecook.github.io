@@ -257,8 +257,12 @@
 	// UX //
 
 	#ux {
-		height: 700px;
+		height: 1200px;
 		background-color: $light-grey;
+
+		.row:last-of-type {
+			margin-top: 70px;
+		}
 
 		.ux-cases {
 			padding-left: 3%;
@@ -299,7 +303,7 @@
 					width: 100%;
 					height: 100%;
 
-					background-color: $copy-grey;
+					background-color: rgba(94, 94, 94, 1);
 					opacity: 0.7;
 
 					transform-origin: center center;
@@ -317,6 +321,24 @@
 					&.shade-three {
 						transform: rotate(325deg) translateX(-101%);
 					}
+					&.shade-coming-soon {
+						opacity: 1;
+						background-color: rgba(94, 94, 94, 0);
+
+						.coming-soon-text {
+							@include xy-center;
+
+							color: rgba(255,255,255,0);
+							font-family: $font-open;
+							font-weight: $light;
+							font-size: 28px;
+							line-height: 28px;
+
+							width: 80%;
+
+							text-transform: uppercase;
+						}
+					}
 				}
 
 				&:hover > .ux-img-shade {
@@ -330,6 +352,13 @@
 					&.shade-three {
 						transform: rotate(325deg) translateX(-50%);
 					}
+					&.shade-coming-soon {
+						background-color: rgba(94, 94, 94, 0.7);
+
+						.coming-soon-text {
+							color: rgba(255,255,255,1);
+						}
+					}
 				}
 
 				&.magic {
@@ -340,6 +369,15 @@
 				}
 				&.lifeally {
 					background-image: url('../img/ux-lifeally.png');
+				}
+				&.camera {
+					background-image: url('../img/ux-camera.png');
+				}
+				&.vivid {
+					background-image: url('../img/ux-vivid.png');
+				}
+				&.bank {
+					background-image: url('../img/ux-bank.png');
 				}
 			}
 		}
