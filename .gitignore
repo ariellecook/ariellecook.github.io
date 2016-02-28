@@ -1,6 +1,1 @@
 .DS_Store
-*.log
-**/.sass-cache
-**/.sass-cache/*
-
-*.codekit
